@@ -12438,7 +12438,7 @@ exports.default = {
 
     computed: {
         welcomeMessage: function welcomeMessage() {
-            return "Welcome: " + this.welcome + "\n            Ipc Main says: " + this.ipcMessage + "\n            ";
+            return "Welcome: " + this.welcome + "\n            <br />\n            Ipc Main says: " + this.ipcMessage + "\n            ";
         }
     }
 };
@@ -14714,7 +14714,16 @@ if (false) {
 /* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function(){},staticRenderFns:[]}
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "main"
+  }, [_c('h3', {
+    domProps: {
+      "innerHTML": _vm._s(_vm.welcomeMessage)
+    }
+  }), _vm._v(" "), _c('child-component'), _vm._v(" "), _c('hr')], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {

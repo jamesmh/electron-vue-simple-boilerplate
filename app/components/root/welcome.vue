@@ -1,6 +1,6 @@
 <template>
     <div class="main">        
-        <h3>{{ welcomeMessage }}</h1>
+        <h3 v-html="welcomeMessage"></h3>
         <child-component></child-component>
         <hr>
     </div>
@@ -27,6 +27,7 @@
         computed: {
             welcomeMessage() {
                 return `Welcome: ${this.welcome}
+                <br />
                 Ipc Main says: ${this.ipcMessage}
                 `;
             },
