@@ -1,0 +1,6 @@
+{
+    "welcome": "Electron + Vuejs Simple Boilerplate",
+    "vue-welcome-message-from-ipc": "Message sent from Main Ipc event!",
+    "github-link": "https://github.com/jamesmh/electron-vue-simple-boilerplate",
+    "github-link-text": "See On GitHub"
+}
