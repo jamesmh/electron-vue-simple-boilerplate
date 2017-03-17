@@ -1,7 +1,7 @@
 <template>
     <div>
         <small>Inside child-component...</small>
-        <a :href="link">
+        <a href="!#" v-browserLink="link">
             {{ label }}
         </a>
     </div>

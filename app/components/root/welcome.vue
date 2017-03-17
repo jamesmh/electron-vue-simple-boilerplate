@@ -1,9 +1,12 @@
 <template>
-    <div class="main">        
-        <h3 v-html="welcomeMessage"></h3>
-        <child-component></child-component>
-        <hr>
-    </div>
+    <slide-transition>
+        <div class="main">
+            <h3 v-html="welcomeMessage"></h3>
+            <child-component></child-component>
+            <hr>
+            <router-link to="/second">Go To Second Route</router-link>
+        </div>
+    </slide-transition>
 </template>
 
 <script>
